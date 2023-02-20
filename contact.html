@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WEBSITE TUTORIALS</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Link for the menu button icon which is found at font awesom 4 cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Then search for font-awesome.icon -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+   <section class="sub-header">
+      <nav>
+         <a href="index.html"><img src="./LOGO.jpg" width="80px"></a>
+         <div class="nav-links" id="navLinks">
+            <!-- Adding a click event -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="./index.html">HOME</a></li>
+               <li><a href="./about.html">ABOUT</a></li>
+               <li><a href="./course.html">COURSE</a></li>
+               <li><a href="./blog.html">BLOG</a></li>
+               <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+   </section>
+   <!-- Contact Us Section -->
+   <section class="location">
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8171113.995226977!2d33.40791929425771!3d0.16510305956448956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182780d08350900f%3A0x403b0eb0a1976dd9!2sKenya!5e0!3m2!1sen!2ske!4v1676887814780!5m2!1sen!2ske"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   
+   <section class="contact-us">
+      <div class="row">
+         <div class="contact-col">
+            <div>
+               <i class="fa fa-home"></i>
+               <span>
+                  <h5>AYZ NAIVASHA</h5>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+               </span>
+            </div>
+            <div>
+               <i class="fa fa-phone"></i>
+               <span>
+                  <h5>AYZ NAIVASHA</h5>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+               </span>
+            </div>
+            <div>
+               <i class="fa fa-envelope"></i>
+               <span>
+                  <h5>AYZ NAIVASHA</h5>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+               </span>
+            </div>
+         </div>
+         <div class="contact-col">
+            <form action="formhandler.php" method="post">
+               <input type="text"name="name" placeholder="Enter Your Name" required>
+               <input type="email"name="email" placeholder="Enter Your email" required>
+               <input type="text"name="subject" placeholder="Enter Your subject" required>
+               <textarea rows="6"name="message" placeholder="Message"></textarea>
+               <button type="submit">SEND MESSAGE</button>
+            </form>
+         </div>
+      </div>
+   </section>
+
+   
+   <!-- Footer -->
+   <section class="footer">
+      <h4>ABOUT US</h4>
+      <P>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Cum sunt debitis vero velit et repellendus?</P>
+      <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart"></i> Code With Shila</p>
+   </section>
+
+
+
+
+   <!-- Javascript for toogle menu -->
+   <script>
+
+      var navlinks = document.getElementById("navLinks");
+      function showMenu() {
+         navLinks.style.right = "0";
+      }
+      function hideMenu() {
+         navLinks.style.right = "-300px";
+      }
+
+   </script>
+</body>
+
+</html>

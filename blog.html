@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WEBSITE TUTORIALS</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Link for the menu button icon which is found at font awesom 4 cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Then search for font-awesome.icon -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+   <section class="sub-header">
+      <nav>
+         <a href="index.html"><img src="./LOGO.jpg" width="80px"></a>
+         <div class="nav-links" id="navLinks">
+            <!-- Adding a click event -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="./index.html">HOME</a></li>
+               <li><a href="./about.html">ABOUT</a></li>
+               <li><a href="./course.html">COURSE</a></li>
+               <li><a href="./blog.html">BLOG</a></li>
+               <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our certificate & online programs for 2021</h1>
+   </section>
+   <!-- Blog page -->
+   <section class="blog-content">
+      <div class="row">
+         <div class="blog-left">
+            <img src="./ABOUT US.jpg">
+            <h2>Our certificate & online programs for 2021</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quas vitae iusto odit consequatur vero dolores reprehenderit ea, quaerat ut nostrum recusandae temporibus in. Expedita ducimus dolorem nobis vel fugiat excepturi natus laborum illum nostrum. Quasi id adipisci sunt culpa?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, mollitia provident tenetur natus fugiat culpa? Ratione veritatis dolor repellat vero facere nisi odio officia eum nihil ab temporibus nam, quas eveniet vitae ipsam incidunt voluptatum, reiciendis sint eligendi dignissimos earum doloremque itaque. Quae minus, blanditiis quidem hic architecto, autem ab facilis voluptas molestiae veniam nesciunt deleniti mollitia doloribus laboriosam officiis!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quibusdam fugiat perferendis quod dignissimos ut, molestiae modi ad praesentium quae excepturi asperiores itaque consectetur blanditiis consequuntur delectus ipsum quos iste expedita omnis quidem in corrupti obcaecati reprehenderit? Nobis eaque, praesentium perferendis quis architecto inventore expedita? Laborum ipsam, dolores nesciunt quidem magni corporis nisi voluptas perferendis ipsum qui. Nulla, maxime culpa!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo inventore magnam consequatur veniam incidunt. Aliquam quia porro magnam cupiditate! Vero atque dolorum accusantium accusamus, optio eius eum neque amet cumque nisi earum, at mollitia tempora, laboriosam unde. Architecto odit iste, aut in ipsum quibusdam ea fuga? Laboriosam velit placeat architecto laborum quaerat expedita omnis minus, quasi fugiat, voluptate sint optio?</p>
+            <div class="comment-box">
+               <h3>Leave a comment</h3>
+               <form class="comment">
+                  <input type="text" placeholder="Enter Name">
+                  <input type="email" placeholder="Enter Email">
+                  <textarea rows="5" placeholder="Your Comment"></textarea>
+                  <button type="submit" class="hero-btn">POST COMMENT</button>
+               </form>
+            </div>
+         </div>
+         <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+               <span>Business Analytics</span>
+               <span>21</span>
+            </div>
+            <div>
+               <span>Data Science</span>
+               <span>21</span>
+            </div>
+            <div>
+               <span>Machine Language</span>
+               <span>21</span>
+            </div>
+            <div>
+               <span>Computer Science</span>
+               <span>21</span>
+            </div>
+            <div>
+               <span>Journalism</span>
+               <span>21</span>
+            </div>
+            <div>
+               <span>Autocad</span>
+               <span>21</span>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Footer -->
+   <section class="footer">
+      <h4>ABOUT US</h4>
+      <P>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Cum sunt debitis vero velit et repellendus?</P>
+      <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart"></i> Code With Shila</p>
+   </section>
+
+
+
+
+   <!-- Javascript for toogle menu -->
+   <script>
+
+      var navlinks = document.getElementById("navLinks");
+      function showMenu() {
+         navLinks.style.right = "0";
+      }
+      function hideMenu() {
+         navLinks.style.right = "-300px";
+      }
+
+   </script>
+</body>
+
+</html>
